@@ -46,5 +46,8 @@ public class Asset {
     @OneToMany(mappedBy = "asset")
     private List<ProcessAsset> processes;
 
+    @OneToMany(mappedBy = "asset")
+    private List<Measurement> measurements;
+
 
 }
